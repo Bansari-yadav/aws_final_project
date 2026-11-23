@@ -49,6 +49,32 @@ The infrastructure is deployed with **Python/boto3**, not Terraform. Node.js/Exp
 
 Weather API: `GET /weather?zip=60616&date=YYYY-MM-DD`; its root `/` is also used as a health-check endpoint. The Advisor also exposes `/advice` for advice-related requests. Dates must be current to the forecast location, not simply the server's UTC date.
 
+
+## Project Screenshots
+
+### 1. Weather Advisor Website
+![Weather Advisor Website](evidence/screenshot/05_weather_advisor_webpage.png)
+
+### 2. Weather Report and Gemini AI Advice
+![Gemini Weather Report](evidence/screenshot/08_weather_report_gemini.png)
+
+### 3. Email Consent and Delivery
+![Email Consent](evidence/screenshot/18_Report_Email_Consent.png)
+
+![Successful Email Delivery](evidence/screenshot/Email_Delivery_Success.png)
+
+### 4. AWS Cloud Deployment
+![Application Load Balancer](evidence/screenshot/11_ALB_Active.png)
+
+![Auto Scaling Groups](evidence/screenshot/12_Auto_Scaling_Groups.png)
+
+### 5. Testing Evidence
+![Validation Tests](evidence/screenshot/01_validation_tests.png)
+
+![Weather Logic Tests](evidence/screenshot/02_weather_logic_tests.png)
+
+### All Screenshots
+[View the complete screenshot evidence folder](evidence/screenshot/)
 ## Implemented security and privacy boundaries
 
 - Input validation for U.S. ZIP format, real calendar dates, forecast range, clothing category and email syntax; request body limited to 4 KB for the HTML Advisor.
